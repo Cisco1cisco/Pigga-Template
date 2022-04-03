@@ -2,6 +2,7 @@
 
 :root {
     --main-color: #bc8c4c;
+    --trans-dur: 0.3s;
 }
 
 /* End Variables */
@@ -20,6 +21,10 @@ html {
 
 body {
     font-family: 'Fira Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul {
@@ -58,3 +63,128 @@ ul {
 
 /* Start Component */
 /* End Component */
+
+/* Start Header */
+
+header {
+    background-color: #212529;
+}
+
+header .container .first-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+header .container .first-nav img {
+    width: 55px;
+}
+
+header .container .first-nav a {
+    color: #adb5bd;
+    font-size: 14px;
+}
+
+header .container .first-nav a span {
+    text-transform: uppercase;
+    color: var(--main-color, #bc8c4c);
+    font-weight: 600;
+}
+
+header .container .sec-nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .container .sec-nav ul {
+    display: flex;
+}
+
+@media (max-width: 576px) {
+    header .container .sec-nav ul {
+        display: none;
+    }
+}
+
+header .container .sec-nav ul li a {
+    padding: 15px;
+    text-transform: capitalize;
+    color: white;
+    font-size: 13px;
+    display: block;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+
+header .container .sec-nav ul li a:hover {
+    color: #ffffffbf;
+}
+
+header .container .sec-nav>a {
+    color: white;
+    font-size: 14px;
+    background-color: var(--main-color, #bc8c4c);
+    padding: 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: block;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+@media (max-width: 576px) {
+    header .container .sec-nav>a {
+        display: none;
+    }
+}
+
+header .container .sec-nav>a:hover {
+    background-color: #a4783d;
+}
+
+header .container .sec-nav .menu {
+    display: none;
+    width: 50px;
+    height: 40px;
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid #383b3f;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+@media (max-width: 576px) {
+    header .container .sec-nav .menu {
+        display: flex;
+    }
+}
+
+header .container .sec-nav .menu span {
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: whitesmoke;
+    margin-bottom: 5px;
+}
+
+/* End Header */
