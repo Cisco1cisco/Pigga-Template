@@ -823,3 +823,123 @@ header .container .sec-nav .menu span {
 }
 
 /* End Testmonials */
+
+/* Start Contact */
+
+.contact {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .container img {
+    width: 450px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 10px;
+}
+
+@media (max-width: 991px) {
+    .contact .container img {
+        width: 330px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact .container img {
+        display: none;
+    }
+}
+
+.contact .container .text {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .contact .container .text {
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact .container .text {
+        width: 100%;
+    }
+}
+
+.contact .container .text form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact .container .text form input:not(input[type="submit"]) {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.contact .container .text form input:not(input[type="submit"]):focus {
+    border-color: #dfc8a9;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(188 140 76 / 25%);
+}
+
+.contact .container .text form input[type="submit"] {
+    background-color: var(--main-color, #bc8c4c);
+    border: none;
+    color: white;
+    padding: 15px 0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+    margin-bottom: 20px;
+}
+
+.contact .container .text form input[type="submit"]:hover {
+    background-color: #a4783d;
+}
+
+.contact .container .text p {
+    font-size: 13px;
+    color: rgba(0, 0, 0, 60%);
+}
+
+.contact .container .text p span {
+    color: var(--main-color, #bc8c4c);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+.contact .container .text p span:hover {
+    color: #886433;
+}
+
+/* End Contact */
