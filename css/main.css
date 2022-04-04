@@ -62,6 +62,46 @@ ul {
 /* End Global Rules */
 
 /* Start Component */
+
+a.book {
+    color: white;
+    text-transform: capitalize;
+    background-color: var(--main-color, #bc8c4c);
+    padding: 15px 25px;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    display: block;
+    width: fit-content;
+}
+
+a.book:hover {
+    background-color: #a4783d;
+}
+
+.title {
+    color: #444444;
+    margin-bottom: 25px;
+}
+
+.title h6 {
+    font-size: 17px;
+    font-weight: 400;
+    opacity: 0.5;
+}
+
+.title h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
 /* End Component */
 
 /* Start Header */
@@ -256,16 +296,72 @@ header .container .sec-nav .menu span {
     }
 }
 
-.landing .container a {
-    color: white;
-    text-transform: capitalize;
-    background-color: var(--main-color, #bc8c4c);
-    padding: 15px 25px;
-    transition: var(--trans-dur, 0.3s);
-    -webkit-transition: var(--trans-dur, 0.3s);
-    -moz-transition: var(--trans-dur, 0.3s);
-    -ms-transition: var(--trans-dur, 0.3s);
-    -o-transition: var(--trans-dur, 0.3s);
+/* End Landing */
+
+/* Start About Us */
+
+.about {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about .container .times {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+    .about .container .times {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .container .times .text {
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about .container .times .text {
+        margin-left: 0;
+    }
+}
+
+.about .container .times .text p {
+    font-size: 16px;
+    color: #444444;
+    font-weight: 700;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.about .container .times .text p span {
+    font-weight: normal;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.about .container .times .text p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.about .container .times .images {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .about .container .times .images {
+        margin: 10px auto;
+        gap: 10px;
+    }
+}
+
+.about .container .times .images img {
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -273,8 +369,84 @@ header .container .sec-nav .menu span {
     -o-border-radius: 5px;
 }
 
-.landing .container a:hover {
-    background-color: #a4783d;
+@media (max-width: 991px) {
+    .about .container .times .images img {
+        width: 150px;
+    }
 }
 
-/* End Landing */
+@media (max-width: 768px) {
+    .about .container .times .images img {
+        width: 49%;
+    }
+}
+
+.about .container .story {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .about .container .story {
+        flex-direction: column;
+    }
+}
+
+.about .container .story .images {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .about .container .story .images {
+        gap: 10px;
+        margin: 10px auto;
+    }
+}
+
+.about .container .story .images img {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 210px;
+}
+
+@media (max-width: 991px) {
+    .about .container .story .images img {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about .container .story .images img {
+        width: 49%;
+    }
+}
+
+.about .container .story .text {
+    flex-basis: 48%;
+}
+
+@media (max-width: 768px) {
+    .about .container .story .text {
+        margin: 20px 0 0 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about .container .story .text {
+        margin-left: 0;
+    }
+}
+
+.about .container .story .text p {
+    color: #444444;
+    opacity: 0.5;
+    line-height: 1.7;
+}
+
+/* End About Us */
