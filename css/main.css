@@ -552,3 +552,106 @@ header .container .sec-nav .menu span {
 }
 
 /* End Services */
+
+/* Start Menu */
+
+.menu {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../photos/section.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+}
+
+.menu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 70%);
+}
+
+.menu .container {
+    position: relative;
+}
+
+.menu .container .title {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.menu .container .content {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu .container .content {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu .container .content {
+        width: 100%;
+    }
+}
+
+.menu .container .content .up {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .container .content .up .dish {
+    flex-basis: calc((100% / 2) - 30px);
+    border-bottom: 2px solid #dee2e6;
+    padding: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu .container .content .up .dish {
+        flex-basis: 100%;
+    }
+}
+
+.menu .container .content .up .dish .head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .container .content .up .dish .head h3 {
+    color: #212529;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.menu .container .content .up .dish .head span {
+    display: block;
+    color: var(--main-color, #bc8c4c);
+    font-weight: 700;
+}
+
+.menu .container .content .up .dish p {
+    color: #212529;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+.menu .container .content a {
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+/* End Menu */
