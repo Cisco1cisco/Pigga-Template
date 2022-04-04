@@ -3,6 +3,8 @@
 :root {
     --main-color: #bc8c4c;
     --trans-dur: 0.3s;
+    --text-color: #444444;
+    --section-pad: 100px;
 }
 
 /* End Variables */
@@ -87,7 +89,7 @@ a.book:hover {
 }
 
 .title {
-    color: #444444;
+    color: var(--text-color, #444444);
     margin-bottom: 25px;
 }
 
@@ -301,8 +303,8 @@ header .container .sec-nav .menu span {
 /* Start About Us */
 
 .about {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
 }
 
 .about .container .times {
@@ -333,7 +335,7 @@ header .container .sec-nav .menu span {
 
 .about .container .times .text p {
     font-size: 16px;
-    color: #444444;
+    color: var(--text-color, #444444);
     font-weight: 700;
     opacity: 0.5;
     margin-bottom: 10px;
@@ -444,7 +446,7 @@ header .container .sec-nav .menu span {
 }
 
 .about .container .story .text p {
-    color: #444444;
+    color: var(--text-color, #444444);
     opacity: 0.5;
     line-height: 1.7;
 }
@@ -455,8 +457,8 @@ header .container .sec-nav .menu span {
 
 .services {
     background-image: url(../photos/services.png);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
     position: relative;
 }
 
@@ -525,7 +527,7 @@ header .container .sec-nav .menu span {
 
 .services .container .dishes .dish .text .head h5 {
     font-size: 14px;
-    color: #444444;
+    color: var(--text-color, #444444);
     transition: var(--trans-dur, 0.3s);
     -webkit-transition: var(--trans-dur, 0.3s);
     -moz-transition: var(--trans-dur, 0.3s);
@@ -541,7 +543,7 @@ header .container .sec-nav .menu span {
 .services .container .dishes .dish .text>p {
     margin-top: 10px;
     font-size: 14px;
-    color: #444444;
+    color: var(--text-color, #444444);
     opacity: 0.7;
     line-height: 1.5;
     transition: var(--trans-dur, 0.3s);
@@ -556,8 +558,8 @@ header .container .sec-nav .menu span {
 /* Start Menu */
 
 .menu {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
     background-image: url(../photos/section.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -659,8 +661,8 @@ header .container .sec-nav .menu span {
 /* Start Team */
 
 .team {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
 }
 
 .team .container .title {
@@ -714,7 +716,7 @@ header .container .sec-nav .menu span {
 
 .team .container .teams .chef h5 {
     font-size: 20px;
-    color: #444444;
+    color: var(--text-color, #444444);
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -722,7 +724,7 @@ header .container .sec-nav .menu span {
 .team .container .teams .chef p {
     text-align: center;
     line-height: 1.7;
-    color: #444444;
+    color: var(--text-color, #444444);
     opacity: 0.8;
     margin-bottom: 15px;
 }
@@ -742,8 +744,8 @@ header .container .sec-nav .menu span {
 /* Start Testmonials */
 
 .testmonials {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: var(--section-pad, 100px);
+    padding-bottom: var(--section-pad, 100px);
     background-image: url(../photos/style-3.png);
 }
 
@@ -805,7 +807,7 @@ header .container .sec-nav .menu span {
 }
 
 .testmonials .container .contant .member .head .text h6 {
-    color: #444444;
+    color: var(--text-color, #444444);
     font-size: 16px;
     margin-bottom: 5px;
 }
@@ -817,7 +819,7 @@ header .container .sec-nav .menu span {
 }
 
 .testmonials .container .contant .member>p {
-    color: #444444;
+    color: var(--text-color, #444444);
     opacity: 0.8;
     line-height: 1.7;
 }
