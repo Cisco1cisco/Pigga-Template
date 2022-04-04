@@ -738,3 +738,88 @@ header .container .sec-nav .menu span {
 }
 
 /* End Team */
+
+/* Start Testmonials */
+
+.testmonials {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../photos/style-3.png);
+}
+
+.testmonials .container .title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.testmonials .container .contant {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .testmonials .container .contant {
+        flex-direction: column;
+    }
+}
+
+.testmonials .container .contant .member {
+    flex-basis: calc((100% /3) - 30px);
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .testmonials .container .contant .member {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .testmonials .container .contant .member {
+        width: 100%;
+    }
+}
+
+.testmonials .container .contant .member .head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.testmonials .container .contant .member .head img {
+    width: 50px;
+    margin-right: 20px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.testmonials .container .contant .member .head .text h6 {
+    color: #444444;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.testmonials .container .contant .member .head .text span {
+    display: block;
+    color: #adb5bd;
+    font-size: 12px;
+}
+
+.testmonials .container .contant .member>p {
+    color: #444444;
+    opacity: 0.8;
+    line-height: 1.7;
+}
+
+/* End Testmonials */
