@@ -68,6 +68,9 @@ ul {
 
 header {
     background-color: #212529;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
 }
 
 header .container .first-nav {
@@ -188,3 +191,90 @@ header .container .sec-nav .menu span {
 }
 
 /* End Header */
+
+/* Start Landing */
+
+.landing {
+    position: relative;
+    background-image: url(../photos/landing.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 120vh;
+}
+
+.landing::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 37, 41, 0.85);
+}
+
+.landing .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.landing .container img {
+    width: 200px;
+}
+
+.landing .container h1:first-of-type {
+    font-size: 18px;
+}
+
+.landing .container h1:last-of-type {
+    font-size: 67px;
+    margin-top: -15px;
+}
+
+@media (max-width: 991px) {
+    .landing .container h1:last-of-type {
+        font-size: 57px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .landing .container h1:last-of-type {
+        font-size: 35px;
+        margin-top: 0;
+    }
+}
+
+.landing .container a {
+    color: white;
+    text-transform: capitalize;
+    background-color: var(--main-color, #bc8c4c);
+    padding: 15px 25px;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.landing .container a:hover {
+    background-color: #a4783d;
+}
+
+/* End Landing */
