@@ -655,3 +655,86 @@ header .container .sec-nav .menu span {
 }
 
 /* End Menu */
+
+/* Start Team */
+
+.team {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.team .container .title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.team .container .teams {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .team .container .teams {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.team .container .teams .chef {
+    flex-basis: calc((100% / 3) - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .team .container .teams .chef {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .team .container .teams .chef {
+        width: 100%;
+    }
+}
+
+.team .container .teams .chef img {
+    width: 150px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.team .container .teams .chef h5 {
+    font-size: 20px;
+    color: #444444;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.team .container .teams .chef p {
+    text-align: center;
+    line-height: 1.7;
+    color: #444444;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.team .container .teams .chef .socials i {
+    color: var(--main-color, #bc8c4c);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.team .container .teams .chef .socials i:hover {
+    color: #886433;
+}
+
+/* End Team */
