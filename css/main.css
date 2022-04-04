@@ -943,3 +943,87 @@ header .container .sec-nav .menu span {
 }
 
 /* End Contact */
+
+/* Start Footer */
+
+footer {
+    background-color: #212529;
+}
+
+footer .container .up-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffffffb3;
+    padding-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    footer .container .up-section {
+        flex-direction: column;
+    }
+}
+
+footer .container .up-section img {
+    width: 100px;
+}
+
+@media (max-width: 768px) {
+    footer .container .up-section img {
+        margin-bottom: 15px;
+    }
+}
+
+footer .container .up-section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .up-section ul li a {
+    color: #ffffffb3;
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+footer .container .down-section {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    footer .container .down-section {
+        justify-content: center;
+    }
+}
+
+footer .container .down-section p {
+    font-size: 13px;
+    color: #ffffffb3;
+}
+
+footer .container .down-section p span {
+    opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+    footer .container .down-section div.icons {
+        display: none;
+    }
+}
+
+
+footer .container .down-section div.icons i {
+    color: #ffffffb3;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+footer .container .down-section div.icons i:hover {
+    color: #bdbebf;
+}
+
+/* End Footer */
