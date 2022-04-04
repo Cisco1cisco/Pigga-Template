@@ -450,3 +450,105 @@ header .container .sec-nav .menu span {
 }
 
 /* End About Us */
+
+/* Start Services */
+
+.services {
+    background-image: url(../photos/services.png);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.services .container {
+    position: relative;
+}
+
+.services .container .title {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.services .container .dishes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .services .container .dishes {
+        justify-content: center;
+    }
+}
+
+.services .container .dishes .dish {
+    flex-basis: calc((100% / 2) - 30px);
+    display: flex;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.services .container .dishes .dish:hover .text .head h5,
+.services .container .dishes .dish:hover .text>p {
+    color: var(--main-color, #bc8c4c);
+}
+
+@media (max-width: 768px) {
+    .services .container .dishes .dish {
+        flex-basis: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .services .container .dishes .dish {
+        flex-basis: 90%;
+    }
+}
+
+.services .container .dishes .dish img {
+    width: 70px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin-right: 10px;
+}
+
+.services .container .dishes .dish .text .head {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px dotted #dee2e6;
+    padding: 10px 0;
+}
+
+.services .container .dishes .dish .text .head h5 {
+    font-size: 14px;
+    color: #444444;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+.services .container .dishes .dish .text .head p {
+    color: var(--main-color, #bc8c4c);
+    font-weight: bold;
+}
+
+.services .container .dishes .dish .text>p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #444444;
+    opacity: 0.7;
+    line-height: 1.5;
+    transition: var(--trans-dur, 0.3s);
+    -webkit-transition: var(--trans-dur, 0.3s);
+    -moz-transition: var(--trans-dur, 0.3s);
+    -ms-transition: var(--trans-dur, 0.3s);
+    -o-transition: var(--trans-dur, 0.3s);
+}
+
+/* End Services */
