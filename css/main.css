@@ -201,7 +201,7 @@ header .container .sec-nav>a:hover {
     background-color: #a4783d;
 }
 
-header .container .sec-nav .menu {
+header .container .sec-nav .icon {
     display: none;
     width: 50px;
     height: 40px;
@@ -219,14 +219,14 @@ header .container .sec-nav .menu {
 }
 
 @media (max-width: 576px) {
-    header .container .sec-nav .menu {
+    header .container .sec-nav .icon {
         display: flex;
     }
 }
 
-header .container .sec-nav .menu span {
+header .container .sec-nav .icon span {
     display: block;
-    width: 30px;
+    width: 25px;
     height: 2px;
     background-color: whitesmoke;
     margin-bottom: 5px;
