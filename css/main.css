@@ -741,32 +741,32 @@ header .container .sec-nav .icon span {
 
 /* End Team */
 
-/* Start Testmonials */
+/* Start Testimonial */
 
-.testmonials {
+.testimonial {
     padding-top: var(--section-pad, 100px);
     padding-bottom: var(--section-pad, 100px);
     background-image: url(../photos/style-3.png);
 }
 
-.testmonials .container .title {
+.testimonial .container .title {
     text-align: center;
     margin-bottom: 60px;
 }
 
-.testmonials .container .contant {
+.testimonial .container .contant {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 @media (max-width: 768px) {
-    .testmonials .container .contant {
+    .testimonial .container .contant {
         flex-direction: column;
     }
 }
 
-.testmonials .container .contant .member {
+.testimonial .container .contant .member {
     flex-basis: calc((100% /3) - 30px);
     border: 1px solid #dfdfdf;
     border-radius: 5px;
@@ -779,24 +779,24 @@ header .container .sec-nav .icon span {
 }
 
 @media (max-width: 768px) {
-    .testmonials .container .contant .member {
+    .testimonial .container .contant .member {
         width: 80%;
     }
 }
 
 @media (max-width: 576px) {
-    .testmonials .container .contant .member {
+    .testimonial .container .contant .member {
         width: 100%;
     }
 }
 
-.testmonials .container .contant .member .head {
+.testimonial .container .contant .member .head {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
 
-.testmonials .container .contant .member .head img {
+.testimonial .container .contant .member .head img {
     width: 50px;
     margin-right: 20px;
     border-radius: 50%;
@@ -806,25 +806,25 @@ header .container .sec-nav .icon span {
     -o-border-radius: 50%;
 }
 
-.testmonials .container .contant .member .head .text h6 {
+.testimonial .container .contant .member .head .text h6 {
     color: var(--text-color, #444444);
     font-size: 16px;
     margin-bottom: 5px;
 }
 
-.testmonials .container .contant .member .head .text span {
+.testimonial .container .contant .member .head .text span {
     display: block;
     color: #adb5bd;
     font-size: 12px;
 }
 
-.testmonials .container .contant .member>p {
+.testimonial .container .contant .member>p {
     color: var(--text-color, #444444);
     opacity: 0.8;
     line-height: 1.7;
 }
 
-/* End Testmonials */
+/* End Testimonial */
 
 /* Start Contact */
 
